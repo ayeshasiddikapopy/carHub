@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 *{
     margin: 0%;
     padding: 0%;
@@ -19,4 +20,77 @@ p{
     font-size: clamp(1rem, 1vw , 1.125rem);
     font-weight: 400;
     
+}
+#box, #box2, #box3, #box4{
+    width: 200px;
+    height: 200px;
+    border-radius: 52px;
+    background: #000;
+}
+#box2{
+    border-radius: 52px;
+    background: #000;
+    animation: round 1s linear infinite;
+}
+@keyframes round {
+    0%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.b3{
+    width: 100%;
+    height: 100vh;
+    background: red;
+}
+.b4{
+    width: 100%;
+    height: 100vh;
+    background: rgb(61, 201, 22);
+}
+.b5{
+    width: 100%;
+    height: 50vh;
+    /* overflow-x: scroll; */
+    display: -webkit-box;
+    background: red;
+}
+.box5{
+    width: 300px;
+    height: 200px;
+    background: #000;
+    padding: 10px;
+    margin: 10px;
+}
+.b6{
+    /* width: 100%; */
+    overflow: hidden;
+    padding: 200px 0;
+}
+.b6 h1{
+    font-size: 200px;
+    /* display: inline-block; */
+    white-space: nowrap;
+    font-family:'Bebas Neue' ;
+    font-stretch: 300%;
+    font-weight: 999;
+    /* transform: translateX(0px); */
+}
+.b9{
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    /* align-content: center; */
+    align-items: center;
+}
+.b9 h2{
+    font-size: 2vw;
+    color: aliceblue;
 }
